@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles.css"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div class="controls">
+      <div class="form-group control">
+        <label>Color</label>
+        <input class="color form-control" type="color" name="color" value="#000000" />
+      </div>
+      <div class="form-group control">
+        <label>Line Width</label>
+        <input class="input form-control" type="number" name="width" min="1" max="10" step="1" value="2"/>
+      </div>
+    
+    <div class="buttons">
+        <button class="button btn btn-outline-dark" type="button" onclick="download();">Save</button>
+        <button class="button btn btn-outline-dark" type="button" onclick="clearCanvas();">Clear</button>
+    </div>
+  </div>
+    <div class="drawing">
+      <canvas id="canvas"> </canvas>
+    </div>
+
+  </body>
+</html>
